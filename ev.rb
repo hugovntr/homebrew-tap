@@ -5,20 +5,20 @@
 class Ev < Formula
   desc "Secure, lightweight CLI for managing environment variables"
   homepage "https://github.com/hugovntr/ev"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hugovntr/ev/releases/download/v0.1.0/ev_0.1.0_darwin_amd64.tar.gz"
-      sha256 "bfbfd22a8e5b1aec8d5201b6f5c817526b8cb78ed22344afbe1ea22dda8f933a"
+      url "https://github.com/hugovntr/ev/releases/download/v0.1.1/ev_0.1.1_darwin_amd64.tar.gz"
+      sha256 "5798ea7418ae86072f874ba1975ad468d19cbd10c0e0b0cacda37d70390000c9"
 
       def install
         bin.install "ev"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hugovntr/ev/releases/download/v0.1.0/ev_0.1.0_darwin_arm64.tar.gz"
-      sha256 "420b0d9018357f14ff7a7abaf8a1716639042cbaf53ea6b050edb4f9294782de"
+      url "https://github.com/hugovntr/ev/releases/download/v0.1.1/ev_0.1.1_darwin_arm64.tar.gz"
+      sha256 "9b502c810e89d1e85a98a4bd1bdd0c7bf931cf4916d4352c0400b9f1f3dd9d05"
 
       def install
         bin.install "ev"
@@ -28,15 +28,15 @@ class Ev < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hugovntr/ev/releases/download/v0.1.0/ev_0.1.0_linux_amd64.tar.gz"
-      sha256 "eff9edda7b28ad8258f191b6f4ebae2f5f19045fab3294a6709fc3398b788e4d"
+      url "https://github.com/hugovntr/ev/releases/download/v0.1.1/ev_0.1.1_linux_amd64.tar.gz"
+      sha256 "15b0013547948478f2a980c21e64c76fb692ae1361068484698648fe456e4b86"
       def install
         bin.install "ev"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hugovntr/ev/releases/download/v0.1.0/ev_0.1.0_linux_arm64.tar.gz"
-      sha256 "eb7b45eff1b26620b49f54071f22f56fac56060172771e4aca05310b7609eca0"
+      url "https://github.com/hugovntr/ev/releases/download/v0.1.1/ev_0.1.1_linux_arm64.tar.gz"
+      sha256 "6463885db59cae2a7dd11f075aa4e9a7288a1d823498af12ce84e9cb690c6723"
       def install
         bin.install "ev"
       end
